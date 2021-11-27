@@ -124,10 +124,8 @@ public class MainActivity extends AppCompatActivity {
 
                             }
                         });
-
                     }
                 }).start();
-
                 list1.clear();
                 list2.clear();
                 list3.clear();

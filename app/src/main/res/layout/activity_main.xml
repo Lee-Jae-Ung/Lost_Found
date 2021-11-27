@@ -8,56 +8,64 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-
-        android:gravity="center">
+        android:layout_height="619dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="분실물 찾기 서비스"
+            android:textSize="30dp"
+            android:layout_marginBottom="100dp">
 
-            android:text="분실물 찾기 서비스">
         </TextView>
+
 
         <EditText
             android:id="@+id/edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="지역"/>
+            android:hint="분실지역" />
 
         <EditText
             android:id="@+id/edit2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="분실물명"/>
+            android:hint="분실물품명" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-           <Button
+
+            <Button
                 android:id="@+id/button"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="search"
-                android:textSize="12sp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
                 android:onClick="mOnClick"
-               android:layout_marginRight="50dp"
-               android:layout_weight="1"/>
+                android:text="검색"
+                android:textSize="12sp" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="clear"
-                android:textSize="12sp"
+                android:layout_weight="1"
                 android:onClick="mOnClick"
-                android:layout_weight="1"/>
+                android:text="초기화"
+                android:textSize="12sp" />
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+
+            android:src="@drawable/police_logo"></ImageView>
 
     </LinearLayout>
 
