@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#faf6d1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +20,10 @@
             android:layout_height="wrap_content"
             android:text="분실물 찾기 서비스"
             android:textSize="30dp"
-            android:layout_marginBottom="100dp">
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/shpae">
 
         </TextView>
 
