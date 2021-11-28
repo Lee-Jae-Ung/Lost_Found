@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/shpae"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp">
 
@@ -11,11 +10,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shpae">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="분실지역 "
+            android:text="분실지역   |"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_marginRight="10dp"
@@ -30,11 +30,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shpae">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="분실물품 "
+            android:text="분실물품   |"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_marginRight="10dp"/>
@@ -49,11 +50,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shpae">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="추가내용 "
+            android:text="추가내용   |"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_marginRight="10dp"/>
@@ -68,11 +70,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shpae">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="분실날짜 "
+            android:text="분실날짜   |"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_marginRight="10dp"/>
@@ -87,11 +90,11 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
->
+        android:background="@drawable/shpae">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="카테고리 "
+            android:text="카테고리   |"
 
             android:textStyle="bold"
             android:textColor="@color/black"
