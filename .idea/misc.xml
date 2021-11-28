@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.26875" />
         <entry key="app/src/main/res/drawable/outline.xml" value="0.390625" />
+        <entry key="app/src/main/res/drawable/outline2.xml" value="0.390625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.29030797101449274" />
         <entry key="app/src/main/res/layout/item_list.xml" value="0.3020833333333333" />
         <entry key="app/src/main/res/layout/listintent.xml" value="0.37447916666666664" />
