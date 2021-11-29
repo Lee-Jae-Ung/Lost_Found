@@ -8,13 +8,11 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:background="#faf6d1">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="619dp"
         android:gravity="center"
         android:orientation="vertical">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,27 +22,21 @@
             android:textStyle="bold"
             android:layout_marginBottom="100dp"
             android:background="@drawable/shpae">
-
         </TextView>
-
-
         <EditText
             android:id="@+id/edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="분실지역" />
-
         <EditText
             android:id="@+id/edit2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="분실물품명" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <Button
                 android:id="@+id/button"
                 android:layout_width="100dp"
@@ -54,7 +46,6 @@
                 android:onClick="mOnClick"
                 android:text="검색"
                 android:textSize="12sp" />
-
             <Button
                 android:id="@+id/button2"
                 android:layout_width="100dp"
@@ -64,18 +55,10 @@
                 android:text="초기화"
                 android:textSize="12sp" />
         </LinearLayout>
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="104dp"
-
-            android:src="@drawable/police_logo"></ImageView>
-
+            android:src="@drawable/police_logo">
+        </ImageView>
     </LinearLayout>
-
-
-
-
-
-
 </LinearLayout>

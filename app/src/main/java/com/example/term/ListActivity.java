@@ -22,26 +22,19 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 public class ListActivity extends AppCompatActivity{
-
-
     ArrayList<String> list11 = ((MainActivity)MainActivity.context_main).list1;
     ArrayList<String> list22 = ((MainActivity)MainActivity.context_main).list2;
     ArrayList<String> list33 = ((MainActivity)MainActivity.context_main).list3;
     ArrayList<String> list44 = ((MainActivity)MainActivity.context_main).list4;
     ArrayList<String> list55 = ((MainActivity)MainActivity.context_main).list5;
-
     ListView listt;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listintent);
-
-
         CustomList adapter = new CustomList(ListActivity.this);
-
         listt=(ListView)findViewById(R.id.list2);
         listt.setAdapter(adapter);
-
     }
     public class CustomList extends ArrayAdapter<String> {
         private final Activity context;

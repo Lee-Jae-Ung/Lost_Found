@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> list4 = new ArrayList<>();
     ArrayList<String> list5 = new ArrayList<>();
 
-    ListView list;
     public static Context context_main;
 
     @Override
@@ -77,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
         edit2= (EditText)findViewById(R.id.edit2);
 
     }
-
 
     public void mOnClick(View v){
         switch (v.getId()){
@@ -117,90 +115,55 @@ public class MainActivity extends AppCompatActivity {
         return queryUrl;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     void getXmlData(){
-
         String queryUrl;
         queryUrl = Url();
         try{
             URL url= new URL(queryUrl);
             InputStream is= url.openStream();
-
             XmlPullParserFactory factory= XmlPullParserFactory.newInstance();
             XmlPullParser xpp= factory.newPullParser();
             xpp.setInput( new InputStreamReader(is, "UTF-8") );
-
             String tag;
             xpp.next();
             int eventType= xpp.getEventType();
             while( eventType != XmlPullParser.END_DOCUMENT ){
                 switch( eventType ){
                     case XmlPullParser.START_DOCUMENT:
-                        //buffer.append("파싱 시작...\n\n");
                         break;
-
                     case XmlPullParser.START_TAG:
-                        tag= xpp.getName();//테그 이름 얻어오기
-
-                        if(tag.equals("item")) ;// 첫번째 검색결과
+                        tag= xpp.getName();
+                        if(tag.equals("item")) ;
                         else if(tag.equals("lstPlace")){
                             xpp.next();
                             list1.add(xpp.getText());
                         }
-
                         else if(tag.equals("lstPrdtNm")){
                             xpp.next();
                             list2.add(xpp.getText());
                         }
-
                         else if(tag.equals("lstSbjt")){
                             xpp.next();
                             list3.add(xpp.getText());
                         }
-
                         else if(tag.equals("lstYmd")){
                             xpp.next();
                             list4.add(xpp.getText());
                         }
-
                         else if(tag.equals("prdtClNm")){
                             xpp.next();
                             list5.add(xpp.getText());
                         }
-
                         break;
-
                     case XmlPullParser.TEXT:
                         break;
-
                     case XmlPullParser.END_TAG:
-                        tag= xpp.getName(); //테그 이름 얻어오기
-
-
+                        tag= xpp.getName();
                 }
-
                 eventType= xpp.next();
             }
-
         } catch (Exception e){
             e.printStackTrace();
         }
-
     }
 }
