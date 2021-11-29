@@ -54,18 +54,17 @@ public class ListActivity extends AppCompatActivity{
             LayoutInflater inflater = context.getLayoutInflater();
             View rowView= inflater.inflate(R.layout.item_list, null, true);
 
-            TextView title = (TextView) rowView.findViewById(R.id.textview);
-            TextView rating = (TextView) rowView.findViewById(R.id.textview2);
-            TextView genre = (TextView) rowView.findViewById(R.id.textview3);
-            TextView year = (TextView) rowView.findViewById(R.id.textview4);
-            TextView ayear = (TextView) rowView.findViewById(R.id.textview5);
+            TextView loc = (TextView) rowView.findViewById(R.id.textview);
+            TextView name = (TextView) rowView.findViewById(R.id.textview2);
+            TextView txt = (TextView) rowView.findViewById(R.id.textview3);
+            TextView dt = (TextView) rowView.findViewById(R.id.textview4);
+            TextView cate = (TextView) rowView.findViewById(R.id.textview5);
 
-            title.setText(list11.get(position));
-
-            rating.setText(list22.get(position));
-            genre.setText(list33.get(position));
-            year.setText(list44.get(position));
-            ayear.setText(list55.get(position));
+            loc.setText(list11.get(position));
+            name.setText(list22.get(position));
+            txt.setText(list33.get(position));
+            dt.setText(list44.get(position));
+            cate.setText(list55.get(position));
             return rowView;
         }
     }
